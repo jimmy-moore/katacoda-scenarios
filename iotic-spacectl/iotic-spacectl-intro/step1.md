@@ -27,4 +27,12 @@ A line of json, and then a feedname at the end (TODO: This will change)
 
 Lets get spacectl to create it!
 
-`cat example-twin-json | ./iotic-spacectl createtwin --host plateng.iotics.space`{{execute}}
+`cat example-twin.json | ./iotic-spacectl createtwins --host plateng.iotics.space`{{execute}}
+
+You might notice the `--host plateng.iotics.space` argument. This tells spacectl which space you want to create your twins in.
+If you want to create several of each twin piped into spacectl, you can use `--num`. Lets try that!
+
+`cat example-twin.json | ./iotic-spacectl createtwins --host plateng.iotics.space --num 12 | tee dozen_twins`{{execute}}
+
+When your twin is created, it's given a unique ID. In the above line, we save the output into the file `dozen_twins` just so we keep
+track of these twin ids.
