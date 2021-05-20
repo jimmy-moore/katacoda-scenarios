@@ -15,5 +15,6 @@ This might take a little time (Couple of minutes)...
 `cat urls.txt | awk '{system("curl -L " $1 " | xml2 | 2csv EstablishmentDetail Geocode/Longitude Geocode/Latitude BusinessName AddressLine1 PostCode >> food.csv")}'`{{execute}}
 
 Now we have a list of food locations, and as we worked out in step1, we can convert them to twin json.
+We'll just do KFC for this example.
 
 `cat food.csv | grep KFC | awk -F, '{print "{\"comments\": {\"added\": [{\"lang\": \"en\", \"value\": \"KFC " $4 " " $5 "\"}]}, \"labels\": {\"added\": [{\"lang\": \"en\", \"value\": \"KFC " $4 " " $5 "\"}]}, \"location\": {\"location\": {\"lat\": " $2 ", \"lon\": " $1 "}}, \"newVisibility\": \"PUBLIC\"}, \"properties\": {\"clearedAll\": false}, \"tags\": {\"added\": [\"KFC\", \"cat_misc\"]}}\ttestfeed"}' > kfc_twins`{{execute}}
