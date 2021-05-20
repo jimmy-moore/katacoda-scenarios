@@ -2,6 +2,9 @@
 
 To get started with Iotics, you can use spacectl.
 
+You can download spacectl from https://nexus.cor.corp.iotic/#browse/browse:generic:iotic-spacectl
+Run it on linux, mac or windows.
+
 ## Configure
 
 First, we need to point spacectl at a space, and tell it to configure itself.

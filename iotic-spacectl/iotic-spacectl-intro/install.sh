@@ -9,4 +9,4 @@
 curl -L "https://github.com/jimmy-moore/katacoda-scenarios/raw/main/iotic-spacectl/iotic-spacectl-intro/assets/iotic-spacectl" -o iotic-spacectl
 chmod 770 iotic-spacectl
 #
-# READY TO PLAY!
+echo "iotic-spacectl READY TO PLAY!"
