@@ -1,14 +1,12 @@
 {
-  "title": "Spacectl",
-  "description": "Introduction to Iotics using spacectl",
+  "title": "Iotics API",
+  "description": "Introduction to Iotics API",
   "courses": [{
     "course_id": "iotic-spacectl-intro",
-    "title": "Intro to spacectl",
-    "description": "Introduction to Iotics spacectl"
-  }, {
-    "course_id": "iotic-spacectl-kfc",
-    "title": "I like KFC",
-    "description": "Simple example to get some real data into iotics"
+    "title": "Intro to Iotics API - Digital Twins",
+    "description": "Introduction to Iotics API"
   }
   ]
 }
+
+
