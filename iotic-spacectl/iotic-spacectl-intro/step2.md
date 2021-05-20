@@ -25,4 +25,13 @@ Now lets publish that data!
 
 `cat dozen_twins_publish | ./iotic-spacectl publish --host plateng.iotics.space`{{execute T2}}
 
-Will the data show up? The suspense!
+Will the data show up? The suspense! Switch back to our first terminal and you should see the data.
+
+So we've learnt how to create a twin, a feed, publish and follow data on it.
+
+## So how would you get data into Iotics?
+
+1. Get the data from where it is (an API, csv, database, etc)
+2. Convert it to json
+3. Use `iotic-spacectl createtwins` to import it into your space
+4. If you defined some feeds, use `iotic-spacectl publish` to publish new data to your twins feeds.
