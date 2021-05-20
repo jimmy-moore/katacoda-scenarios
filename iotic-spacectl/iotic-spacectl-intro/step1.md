@@ -38,7 +38,7 @@ When your twin is created, it's given a unique ID. In the above line, we save th
 track of these twin ids.
 To make some future steps easier, lets grab out the twin IDs from that output.
 
-`cat dozen_twins | grep CREATED | awk '{print $4}' > dozen_twin_ids
+`cat dozen_twins | grep CREATED | awk '{print $4}' > dozen_twin_ids`
 
 Congratulations! You just created your first 13 twins!
 But how do we know they're actually there on the space? We can use describetwin with the IDs that we saved.
