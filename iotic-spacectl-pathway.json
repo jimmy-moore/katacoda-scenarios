@@ -5,6 +5,10 @@
     "course_id": "iotic-spacectl-intro",
     "title": "Intro to spacectl",
     "description": "Introduction to Iotics spacectl"
+  }, {
+    "course_id": "iotic-spacectl-import",
+    "title": "I like KFC",
+    "description": "Simple example to get some real data into iotics"
   }
   ]
 }
