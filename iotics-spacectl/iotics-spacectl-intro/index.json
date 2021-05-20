@@ -27,7 +27,10 @@
     },
     "finish": {
       "text": "finish.md"
-    }
+    },
+    "host01": [
+          {"file": "iotic-spacectl", "target": "."}
+    ]
   },
   "environment": {
     "uilayout": "terminal"
