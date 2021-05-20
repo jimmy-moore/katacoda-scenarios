@@ -2,7 +2,7 @@
   "title": "Spacectl",
   "description": "Introduction to Iotics using spacectl",
   "courses": [{
-    "course_id": "iotics-spacectl-intro",
+    "course_id": "iotic-spacectl-intro",
     "title": "Intro to spacectl",
     "description": "Introduction to Iotics spacectl"
   }

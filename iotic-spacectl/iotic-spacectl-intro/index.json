@@ -28,9 +28,9 @@
     "finish": {
       "text": "finish.md"
     },
-    "host01": [
-          {"file": "iotic-spacectl", "target": "."}
-    ]
+    "assets": {
+        "client": [{"file": "iotic-spacectl", "target": "/root/", "chmod": "+x"}]
+    }
   },
   "environment": {
     "uilayout": "terminal"
