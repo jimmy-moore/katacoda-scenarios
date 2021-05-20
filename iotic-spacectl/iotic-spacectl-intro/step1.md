@@ -38,9 +38,12 @@ When your twin is created, it's given a unique ID. In the above line, we save th
 track of these twin ids.
 To make some future steps easier, lets grab out the twin IDs from that output.
 
-`cat dozen_twins | grep CREATED | awk '{print $4}' > dozen_twin_ids`
+`cat dozen_twins | grep CREATED | awk '{print $4}' > dozen_twin_ids`{{execute}}
 
 Congratulations! You just created your first 13 twins!
+
+## Lookup twins
+
 But how do we know they're actually there on the space? We can use describetwin with the IDs that we saved.
 
 `cat dozen_twin_ids | ./iotic-spacectl describetwins --host plateng.iotics.space`{{execute}}
@@ -50,4 +53,4 @@ There's lots of ways to search so don't worry about the exact query syntax for n
 
 `echo {"filter": {"text": "JMTWIN"}, "responseType": "FULL"} | ./iotic-spacectl searchtwins --host plateng.iotics.space`{{execute}}
 
-We also created a feed on each of these twins, so let's look at feeds next!
+We also created a feed on each of these twins, so let's look at feeds next! Exciting times!
