@@ -36,3 +36,5 @@ If you want to create several of each twin piped into spacectl, you can use `--n
 
 When your twin is created, it's given a unique ID. In the above line, we save the output into the file `dozen_twins` just so we keep
 track of these twin ids.
+
+Congratulations! You just created your first 13 twins! We also created a feed on each one, so let's look at feeds next!
