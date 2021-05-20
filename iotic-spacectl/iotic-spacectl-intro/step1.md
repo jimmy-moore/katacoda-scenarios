@@ -1,4 +1,4 @@
-# Create a twin
+# Figure out the data
 
 Let's download one of these food rating things!
 
@@ -16,6 +16,6 @@ Lets see how this looks, and find the KFC outlets in Lambeth:
 
 Next we need to munge this around into some twin like data...
 
-`cat Lambeth.csv | grep KFC | awk -F, '{print "{\"comments\": {\"added\": [{\"lang\": \"en\", \"value\": \"KFC\"}]}, \"labels\": {\"added\": [{\"lang\": \"en\", \"value\": \"$3\"}]}, \"location\": {\"location\": {\"lat\": $2, \"lon\":$1}}, \"newVisibility\": \"PUBLIC\"}, \"properties\": {\"clearedAll\": false}, \"tags\": {\"added\": [\"KFC\"]}}\ttestfeed"}' > kfc_twins`
+`cat Lambeth.csv | grep KFC | awk -F, '{print "{\"comments\": {\"added\": [{\"lang\": \"en\", \"value\": \"KFC\"}]}, \"labels\": {\"added\": [{\"lang\": \"en\", \"value\": \"$3\"}]}, \"location\": {\"location\": {\"lat\": $2, \"lon\":$1}}, \"newVisibility\": \"PUBLIC\"}, \"properties\": {\"clearedAll\": false}, \"tags\": {\"added\": [\"KFC\"]}}\ttestfeed"}' > kfc_twins`{{execute}}
 
 OK, all looks good. Next lets get the data for the whole of the UK.

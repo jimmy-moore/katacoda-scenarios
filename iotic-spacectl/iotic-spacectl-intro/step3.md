@@ -1,6 +1,12 @@
-# Delete twins
+# Import the twins into our space
 
-If you don't need a twin anymore, you can delete it.
-Just send some IDs into spacectl with the `deletetwins` command.
+## Init spacectl
 
-`cat dozen_twin_ids | ./iotic-spacectl deletetwins --host plateng.iotics.space`{{execute T2}}
+`./iotic-spacectl init --host plateng.iotics.space`{{execute}}
+
+## Import the twins
+
+`cat kfc_twins | ./iotic-spacectl createtwins --host plateng.iotics.space | tee kfc_created_twins`{{execute}}
+
+Now lets see if we can find them!
+

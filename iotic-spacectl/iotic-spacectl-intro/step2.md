@@ -16,4 +16,4 @@ This might take a little time...
 
 Now we have a list of food locations, and as we worked out in step1, we can convert them to twin json.
 
-`cat food.csv | grep KFC | awk -F, '{print "{\"comments\": {\"added\": [{\"lang\": \"en\", \"value\": \"KFC\"}]}, \"labels\": {\"added\": [{\"lang\": \"en\", \"value\": \"$3\"}]}, \"location\": {\"location\": {\"lat\": $2, \"lon\":$1}}, \"newVisibility\": \"PUBLIC\"}, \"properties\": {\"clearedAll\": false}, \"tags\": {\"added\": [\"KFC\"]}}\ttestfeed"}' > kfc_twins`
+`cat food.csv | grep KFC | awk -F, '{print "{\"comments\": {\"added\": [{\"lang\": \"en\", \"value\": \"KFC\"}]}, \"labels\": {\"added\": [{\"lang\": \"en\", \"value\": \"$3\"}]}, \"location\": {\"location\": {\"lat\": $2, \"lon\":$1}}, \"newVisibility\": \"PUBLIC\"}, \"properties\": {\"clearedAll\": false}, \"tags\": {\"added\": [\"KFC\"]}}\ttestfeed"}' > kfc_twins`{{execute}}
