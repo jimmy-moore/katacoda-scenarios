@@ -21,7 +21,7 @@ First, lets setup something following the dozen twin feeds.
 
 `cat dozen_twins_follow | ./iotic-spacectl follow --host plateng.iotics.space`{{execute T1}}
 
-Now lets publish that data!
+Now lets publish that data! You might need to click this one twice - katacoda issue?
 
 `cat dozen_twins_publish | ./iotic-spacectl publish --host plateng.iotics.space`{{execute T2}}
 
