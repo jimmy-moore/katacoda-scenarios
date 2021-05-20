@@ -6,6 +6,12 @@
     "title": "Intro to Iotics API - Digital Twins",
     "description": "Introduction to Iotics API"
   }
+  ,{
+    "course_id": "iotic-spacectl-kfc",
+    "title": "I like kfc",
+    "description": "Import data into iotics"
+  }
+
   ]
 }
 
