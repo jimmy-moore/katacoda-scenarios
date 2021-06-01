@@ -49,10 +49,8 @@ For our first example, lets suppose we create a twin of our house.
 Twins can have one or more comments, in any language.
 
 `Comment value [enter if no more]>` `This is my house`{{execute}}
-`Comment language [default 'en']>` ```
-```{{execute}}
-`Comment value [enter if no more]>` ```
-```{{execute}}
+`Comment language [default 'en']>` `^ENTER`{{execute ctrl-seq}}
+`Comment value [enter if no more]>` `^ENTER`{{execute ctrl-seq}}
 
 ### Labels
 
